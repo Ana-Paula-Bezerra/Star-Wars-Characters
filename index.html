@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars | Ana Paula Bezerra</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="./assets/millennium-falcon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        
+        <a href="./index.html"><!--envolver os logos na tag <a href> redirecionando para o index.html-->
+            <div class="logo">
+                <img src="./assets/star-wars-logo.png" alt="logo" class="logo-img"/>
+                <span class="logo-text">Characters</span>
+            </div>
+        </a>
+
+        <div class="social-media">
+
+            <a href="https://www.instagram.com/a.n.a._.p.a.u.l.a/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/a.n.a.p.a.u.l.a.140581" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ana-paula-b-202184193/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/Ana-Paula-Bezerra" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <h2>Conheca todos os personagens de Star Wars em um so lugar</h2>
+
+        <div class="main-content" id="main-content"></div>
+
+        <div class="modal" id="modal" onclick="hideModal()">
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+
+        <div class="buttons">
+            <button id="back-button" disabled>Anterior</button><!--disabled será manipulado no java script, caso tenha uma página anterior o botão será habilitado-->
+            <button id="next-button" disabled>Próxima</button>
+        </div> 
+        
+    </div>
+
+    <footer>
+        <p class="footer-logo">Star Wars Characters</p>
+        <p class="footer-copyright">Desenvolvido por &copy; Ana Paula Bezerra</p>
+    </footer>
+
+    <!-- as metatags são executadas antes do body, por isso colocamos o script no body e não no head -->
+    <script src="https://kit.fontawesome.com/686344426b.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
